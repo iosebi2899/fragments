@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeScreen">
+
+    <fragment
+        android:id="@+id/questions"
+        android:name="com.example.myapplication.fragments.Questions"
+        android:label="fragment_questions"
+        tools:layout="@layout/fragment_questions" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="იოსები" />
+        <action
+            android:id="@+id/action_questions_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.example.myapplication.fragments.welcomeScreen"
+        android:label="welcome_screen"
+        tools:layout="@layout/welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreen_to_questions"
+            app:destination="@id/questions" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.myapplication.fragments.result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="იოსები" />
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="18" />
+    </fragment>
+</navigation>
