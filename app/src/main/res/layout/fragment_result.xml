@@ -9,15 +9,17 @@
     android:background="@color/teal_700">
 
     <TextView
+        android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="იოსებ შენი ასაკი ძაღლების ასაკში არის"
+        android:text="@string/exampleText"
         android:textColor="@color/white"
         />
     <TextView
+        android:id="@+id/ageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="21წლის"
+        android:text="@string/exampleAge"
         android:textColor="@color/white"
         android:textSize="50sp"
         android:layout_marginTop="30dp"/>

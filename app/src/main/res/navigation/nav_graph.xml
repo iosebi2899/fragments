@@ -13,10 +13,11 @@
         <argument
             android:name="name"
             app:argType="string"
-            android:defaultValue="იოსები" />
+                />
         <action
             android:id="@+id/action_questions_to_result"
-            app:destination="@id/result" />
+            app:destination="@id/result"
+                />
     </fragment>
     <fragment
         android:id="@+id/welcomeScreen"
@@ -34,11 +35,10 @@
         tools:layout="@layout/fragment_result" >
         <argument
             android:name="name"
-            app:argType="string"
-            android:defaultValue="იოსები" />
+            app:argType="string" />
         <argument
-            android:name="age"
-            app:argType="integer"
-            android:defaultValue="18" />
+            android:name="userAge"
+            app:argType="string"
+            />
     </fragment>
 </navigation>

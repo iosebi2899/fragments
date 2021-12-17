@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enterAge">შეიყვანე თქვენი ასაკი:</string>
+    <string name="tavadAge">ასაკი</string>
+    <string name="result">შედეგი</string>
+    <string name="exampleText">შენი ასაკი ძაღლების ასაკში არის</string>
+    <string name="exampleAge">21წლის</string>
 </resources>
